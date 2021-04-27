@@ -1,0 +1,36 @@
+
+ Symbol Table
+--------------------------------------
+Identifier    Memory Address    Type
+fahr          5000              identifier
+cel           5001              identifier
+isFoo         5002              identifier
+isBar         5003              identifier
+foo           5004              identifier
+bar           5005              identifier
+
+ Instructions
+--------------------
+1    PUSHI     5         
+2    PUSHM     5000      
+3    MUL                 
+4    PUSHI     9         
+5    MUL                 
+6    PUSHM     5001      
+7    PUSHI     32        
+8    ADD                 
+9    STDIN               
+10   PUSHM     5004      
+11   LEQ                 
+12   JUMPZ     24        
+13   PUSHM     5005      
+14   POPM      5005      
+15   PUSHM     5004      
+16   PUSHI     32        
+17   ADD                 
+18   POPM      5005      
+19   PUSHM     5004      
+20   PUSHM     5005      
+21   ADD                 
+22   STDOUT              
+23   PUSHM     5005      

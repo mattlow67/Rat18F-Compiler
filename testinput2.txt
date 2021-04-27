@@ -1,0 +1,29 @@
+[* test comment.
+   presumably, the program's description would
+   go here.
+*]
+
+function convert1x (fahr : int)
+{
+           return 5 * fahr / 9;
+}
+
+function test1xfunction (cel : real)
+{
+           return cel + 32;
+}
+
+$$
+	bool isFoo, isBar;
+	int foo, bar;
+	
+	get (foo, bar);
+
+	if (foo =< bar) {
+		isFoo = true;
+		bar = foo + 32;
+		put (foo + bar);
+		return bar;
+	}
+	ifend
+$$
