@@ -3,7 +3,7 @@ The compiling of code entails several processes, each of which produces intermed
 
 First, the source code is broken into smaller pieces, or tokens, which are validated according to Rat18F’s lexical conventions. A deterministic finite machine and its non-deterministic counterpart, as portrayed in the table and diagram below, are used for this task. 'd' denotes a digit and 'l' a letter/character.
 
-![table](https://user-images.githubusercontent.com/69742757/116314182-a06c8700-a763-11eb-9777-58cc26336144.JPG)
+![table](https://user-images.githubusercontent.com/69742757/116314946-a747c980-a764-11eb-9569-52699796e4d1.JPG)
 ![diagram](https://user-images.githubusercontent.com/69742757/116314284-c134dc80-a763-11eb-99c8-cebb2e1c8987.png)
 
 In the event when a lexeme is not identified as a separator, an operator, or an unknown token, it is run through a series of loops (as portrayed above and programmatically implemented in ```tokenizer.h```) to determine if it is an integer, real number, identifier, or keyword. 
