@@ -1,5 +1,5 @@
 ## Rat18F Compiler
-The compiling of code entails several processes, each of which produces intermediary code while adhering to the rules of the Rat18F language (which are provided in a separate file), and ultimately produces assembly code. In this instance, these processes are implemented across serveral **C++** files.
+The compiling of code entails several processes, each of which produces intermediary code while adhering to the rules of the Rat18F language (which are provided in ```Rat18F.pdf```), and ultimately produces assembly code. In this instance, these processes are implemented across serveral **C++** files.
 
 First, the source code is broken into smaller pieces, or tokens, which are validated according to Rat18F’s lexical conventions. A deterministic finite machine and its non-deterministic counterpart, as portrayed in the table and diagram below, are used for this task. 'd' denotes a digit and 'l' a letter/character.
 
